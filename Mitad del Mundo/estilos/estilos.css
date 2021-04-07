@@ -1,0 +1,651 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: bahnschrift;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+}
+
+
+/*BARRA DE NAVEGACION*/
+
+.nav_bar{
+position: fixed;
+display: flex;
+justify-content: center;
+background:#0e0d0dde;
+font-size: 15px;
+font-weight: lighter;
+width: 100%;
+max-width: 1400px;
+padding-top: 10px;
+padding-bottom: 10px;
+z-index: 10;
+}
+
+/*ITEMS DE BARRA DE NAVEGACION*/
+.nav_bar h4{
+    color: #f0e0ee;
+    padding: 10px 50px;
+    margin-right: 15px;
+   position: relative;
+   display: inline-block;
+   text-transform: uppercase;
+   transition: 0.5s;
+}
+
+.nav_bar h4 a{
+    color: #f0e0ee;
+    text-decoration:none ;
+   display: inline-block;
+   text-transform: uppercase;
+}
+
+
+.nav_bar h4 a:hover{
+    color: #fdc21e;
+    text-shadow: 0px 0px 3px #fdc21e,
+    0px 0px 10px #fdc21e49;
+    transition: .3s;
+    
+}
+.nav_bar h4:hover{
+    color: #fdc21e;
+    text-shadow: 0px 0px 3px #fdc21e,
+    0px 0px 10px #fdc21e49;
+    transition: .3s;
+    
+}
+
+
+/*EFECTO CHIDO DE ITEMS DE BARRA DE NAVEGACION*/
+
+.nav_bar h4 span{
+    display: block;
+    position: absolute;
+    background:#fdc21e;
+}
+
+
+.nav_bar h4 span:nth-child(1){
+left:0;
+bottom: 0;
+width: 2px;
+height: 100%;
+transform: scaleY(0);
+transform-origin: top;
+transition:transform 0.5s;
+box-shadow: 0px 0px 5px #fdc21e,
+    0px 0px 10px #fdc21e49;
+
+}
+.nav_bar h4:hover span:nth-child(1){
+transform: scaleY(1);
+transform-origin: bottom;
+transition: transform 0.5s;
+}
+
+
+
+
+
+.nav_bar h4 span:nth-child(2){
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:transform 0.5s;
+  box-shadow: 0px 0px 5px #fdc21e,
+    0px 0px 10px #fdc21e49;  
+    
+}
+.nav_bar h4:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+
+
+
+.nav_bar h4 span:nth-child(3){
+right:0;
+bottom: 0;
+width: 2px;
+height: 100%;
+transform: scaleY(0);
+transform-origin: top;
+transition:transform 0.5s;
+box-shadow: 0px 0px 5px #fdc21e,
+    0px 0px 10px #fdc21e49;
+
+}
+.nav_bar h4:hover span:nth-child(3){
+transform: scaleY(1);
+transform-origin: bottom;
+transition: transform 0.5s;
+}
+
+
+
+
+.nav_bar h4 span:nth-child(4){
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:transform 0.5s;
+    transition-delay: 0.3s;
+    box-shadow: 0px 0px 5px #fdc12e,
+    0px 0px 10px #fdc21e49;
+}
+.nav_bar h4:hover span:nth-child(4){
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+    transition-delay:0.3s;
+    
+
+}
+
+
+
+/*PROGRAMACION DE LA BARRA DE REDES SOCIALES*/
+.redes_bar{
+    display: flex;
+    float: right;
+    position: fixed;
+    margin-top:350px ;
+    margin-left: 20px;
+    color: #fdc12e;
+    font-weight: 800;
+    z-index: 2;
+}
+
+.redes_bar ol{
+display: flex;
+flex-direction: column;
+}
+
+.redes_bar ol li{
+    text-align: center;
+    position: relative;
+    background:#f7fff702;
+    padding: 10px 12px;
+    margin: 5px 15px;
+    text-transform: uppercase;
+    transition:0.5s;
+    overflow: hidden;
+
+}
+
+.redes_bar ol li:hover{
+    background: #0e0d0dde;
+    color: #fdc21e;
+    text-shadow: 0px 0px 3px #fdc21e,
+    0px 0px 10px #fdc21e49;
+    box-shadow: 0px 0px 10px #fdc21e,
+    0px 0px 10px #fdc21e49; 
+    transition-delay: 0.5s;
+}
+
+
+.redes_bar .box_redes li:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top:2px solid #0e0d0dde;
+    border-left:2px solid #0e0d0dde;
+    transition: 0.5s;
+}
+
+.redes_bar .box_redes li:hover:before{
+width: 100%;
+height: 100%;
+border-top:2px solid #fdc21e;
+border-left:2px solid #fdc21e;
+}
+
+
+
+
+.redes_bar .box_redes li:after{
+    content: '';
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom:2px solid #0e0d0dde;
+    border-right:2px solid #0e0d0dde;
+    transition: 0.5s;
+}
+
+.redes_bar .box_redes li:hover:after{
+    width: 100%;
+    height: 100%;
+    border-bottom:2px solid #fdc21e;
+    border-right:2px solid #fdc21e;
+}
+
+
+
+
+
+
+
+/*PROGRAMACION BANNER DE ENTRADA O "INICIO"*/
+
+.banner_image1{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+    justify-content: space-around;
+    overflow: hidden;
+    background: #f7fff7;
+    color: #0e0d0dde;
+}
+
+
+
+
+
+.banner_image1 .texto_banner{
+    padding-bottom: 80px;
+    
+}
+
+.banner_image1 .texto_banner h2{
+font-size: 30px;
+font-weight: 300;
+}
+
+.banner_image1 .texto_banner h4{
+    padding-top: 10px;
+    font-size: 17px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+
+/*ESTILOS DEL APARTADO HISTORIA*/
+
+
+
+.history_box{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: #f7fff7;
+    color: #0e0d0d;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    font-size: 15px;
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+.imagen_history_box{
+padding-top:100px ;
+}
+.p_historia{
+width: 600px;
+display: flex;
+flex-wrap:nowrap;
+justify-content: space-around;
+}
+
+.p_historia .btn{
+    position: relative;
+    padding: 100px 250px;
+    width:  900px;
+    height: 400px;
+    margin: 20px;
+    
+}
+
+.p_historia .btn span{
+    padding: 20px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7fff700;
+   
+    border-top: 1px solid rgba(255,255,255,0.1) ;
+    border-bottom: 1px solid rgba(255,255,255,0.1) ;
+    color: #0e0d0dde;
+    z-index: 1;
+    font-weight: 400;
+    overflow: hidden;
+    transition: 0.5s;
+    
+    border-radius: 10px;
+}
+
+.p_historia .btn:hover span{
+    color: #fdc12e;
+    transition: .60s;
+    box-shadow: 0 0 30px #fdc12e;
+    text-shadow: 0 0 4px #fdc12e;
+}
+
+
+
+.p_historia .btn::before{
+    content:'';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 1px;
+    height: 0px;
+    background: #0e0d0df3;
+    border-radius: 10px;
+    transition: .30s;
+    transition-delay: 0s;
+    
+}
+
+.p_historia .btn:hover::before{
+    height: 100%;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px;
+    transition-delay: 0.5s;
+    
+}
+
+
+
+
+.p_historia .btn::after{
+    content:'';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 1px;
+    height: 0px;
+    background: #0e0d0def;
+    border-radius: 10px;
+    transition: .30s;
+    transition-delay: 0s
+}
+
+.p_historia .btn:hover::after{
+    height: 100%;
+    top: 0;
+    width: 100%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+
+
+
+
+
+
+
+
+/*ESTILOS DEL APARTADO DE ¿COMO LLEGAR? EN LA WEB*/
+
+.ruta_box{
+    padding-top: 150px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: #f7fff7;
+    color: #0e0d0d;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 150px;    
+
+
+}
+.ruta_box h1{
+    padding-bottom: 100px;
+}
+
+.ruta_box .items_ruta{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #111;
+    text-transform: uppercase;
+    color: #111;
+}
+
+.items_ruta span{
+    position: relative;
+    z-index: 3;
+}
+
+.items_ruta:before{
+    content:'';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background: #fff;
+    transition: 0.5s ease-in-out;
+    transform: scaleY(1);
+}
+.items_ruta:hover:before{
+    transform: scaleY(0);
+}
+
+.items_ruta:hover{
+    color:#000000
+}
+
+
+
+.items_ruta:after{
+    content:'';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background: #fff;
+    transition: 0.5s ease-in-out;
+    transform: scaleX(1);
+}
+.items_ruta:hover:after{
+    transform: scaleX(0);
+}
+
+
+
+.ruta_box .items_ruta span{
+display: flex;
+overflow: hidden;
+width: 1000px;
+display: flex;
+flex-wrap:nowrap;
+justify-content: space-around;
+background: #f7fff700;
+padding: 20px 20px;
+}
+
+
+
+.ruta_box .items_ruta .texto_ruta{
+width: 350px;
+list-style: none;
+}
+
+
+/*ESTILOS DEL APARTADO ATRACTIVOS*/
+
+.atractivos_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0e0d0d;
+    color: #f7fff7;
+
+}
+
+.atractivos_body h1{
+padding-top: 100px;
+}
+
+.atractivos_container{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 40px 0;
+flex-wrap: wrap;
+
+}
+
+
+.atractivos_container .atractivos_box{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    color: #f7fff7;
+    background: #0e0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  20px 10px;
+    transition: 0.5s;
+}
+
+
+
+
+.atractivos_container .atractivos_box:hover{
+    transform: translateY(-20px);
+}
+
+
+.atractivos_container .atractivos_box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,#fdc12e,#ff0040,#fdc12e);
+    background-size: 400%;
+    animation: animate 8s linear infinite;
+    overflow: hidden;
+
+}
+
+.atractivos_container .atractivos_box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,#fdc12e,#ff0062,#fdc12e);
+    background-size: 400%;
+    animation: animate 8s linear infinite;
+    filter: blur(10px);
+    overflow: hidden;
+}
+
+@keyframes animate{
+
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+
+
+ 
+.atractivos_container .atractivos_box span{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    background: rgba(0,0,0,0.6);
+    z-index: 2;
+
+}
+
+.atractivos_container .atractivos_box span::before{
+    content:'';
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+
+}
+
+
+
+.atractivos_container .atractivos_box .atractivos_text{
+
+    position: relative;
+    z-index: 9;
+    padding: 30px 40px;
+    color: #f7fff7;
+
+}
+
+/*ESTILOS DEL APARTADO CONTACTOS*/
+
+
+
+.contactos_body{
+    background: #0e0d0d;
+    color: #f7fff7;
+    padding-top: 200px;
+
+}
+.contactos_body h2{
+    text-align: center;
+    font-size: 30px;
+}
+.contactos_body .contactos_box{
+    padding:50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
