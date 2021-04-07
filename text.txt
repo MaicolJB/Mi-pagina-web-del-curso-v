@@ -1,0 +1,27 @@
+<ol class="p_historia">
+            <p> 
+                <span> 
+                  <br>  La Ciudad Mitad del Mundo es un terreno propiedad de la prefectura de la provincia de Pichincha.Está
+                  <br> situado en la parroquia de San Antonio del Distrito Metropolitano de Quito, al norte de la ciudad de
+                  <br> Quito.La principal atracción del lugar es el monumento a la Mitad del Mundo, el cual tiene como finalidad
+                  <br> el resaltar la ubicación exacta de la línea ecuatorial, del cual el país toma su nombre, y destacar 
+                  <br> también la misión geodésica franco-española del siglo XVIII que ubicó el sitio aproximado por el cual
+                  <br> pasa la línea equinoccial. También se encuentra el Museo Etnográfico Mitad del Mundo, un museo sobre
+                  <br> la etnografía indígena de Ecuador. Una pequeña ciudad que rodea el monumento actúa como centro turístico,
+                  <br> ofreciendo una réplica de una ciudad colonial
+                </span>
+            </p>   
+
+            <p>
+                <span>
+                    <br>    Entre 1736 y 1744, una misión geodésica francesa (dirigida por Charles Marie de la Condamine) viajó al
+                    <br>    Ecuador (en aquel entonces parte del imperio español) para resolver una discusión que existía en la Academia
+                    <br>    de Ciencias de París, sobre si el globo terráqueo tenía achatamiento en los polos o en los extremos. Esta
+                    <br>    misión hizo mediciones y cálculos astronómicos para determinar cuál era efectivamente el achatamiento 
+                    <br>    la Tierra. De ahí se deriva el Sistema Métrico Decimal, porque el Metro es la diezmillonésima parte de
+                    <br>    un cuadrante del meridiano terrestre, que fue medido por la misión de La Condamine y otros expertos que
+                    <br>    estuvieron en la expedición. Ecuador fue elegido para la medición debido a que ofrecía condiciones más
+                    <br>    estables para la realización de la misión, puesto que en África y Asia las condiciones no eran estables.
+                    <br>    Ya en 1982 fue construido, despues de algunos errores de ubicacion, el monumento que hoy se encuetra actualmente.
+            </span>
+            </p>
